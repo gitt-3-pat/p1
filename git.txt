@@ -1,0 +1,20 @@
+git clone - copia el repositorio remoto, y lo descarga en local (en este caso en codespaces, que actúa como tu propio ordenador). Lo he usado para crear la copia del repositorio proporcionado en moodle.
+@miguelsbeato ➜ /workspaces/p1-fork (main) $ git clone https://github.com/miguelsbeato/p1-fork
+Cloning into 'p1-fork'...
+remote: Enumerating objects: 6, done.
+remote: Counting objects: 100% (6/6), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (6/6), done.
+
+git status - te dice en qué rama estás, y qué archivos no han sido añadidos para luego hacer el commit y el push. Lo he usado para ver si git.txt está guardado o no, ya que la rama en la que estás aparece entre paréntesis siempre.
+
+git add - sirve para decir qué archivos estarán incluidos en el commit que se hará luego (es como para incluir sólo ciertos archivos en una versión a la que se podrá retroceder luego). Lo he usado para añadir git.pdf.
+
+git commit - guarda todos los archivos sobre los que se ha hecho el git add. Lo he usado sobre git.pdf.
+
+git push - es el último paso para guardar los cambios en el main. Lo he usado sobre git.pdf.
+
+git checkout - sirve para moverse entre una rama y otra y crear nuevas ramas. Lo he usado para crear una nueva rama llamada comandos.
+@miguelsbeato ➜ /workspaces/p1-fork (main) $ git checkout -b comandos
+Switched to a new branch 'comandos'
